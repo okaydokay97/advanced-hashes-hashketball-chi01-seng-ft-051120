@@ -175,7 +175,8 @@ def player_numbers(teamname)
        return numbers_array
     end
     if teamname== game_hash[:away][:team_name]
-      return numbers_array.push(game_hash[:home][:players][count][:number])
+       numbers_array.push(game_hash[:home][:players][count][:number])
+       return numbers_array
     end
     count += 1
   end

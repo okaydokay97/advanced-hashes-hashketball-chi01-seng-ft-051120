@@ -199,10 +199,10 @@ def big_shoe_rebounds
     while count < all_players.length
       if max < all_players[count][:shoe]
         max = all_players[count][:shoe]
-        return all_players[count][:rebounds]
       end
       count += 1
     end
+  return all_players[count][:rebounds]
 end
 
 

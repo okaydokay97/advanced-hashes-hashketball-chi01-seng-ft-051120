@@ -175,7 +175,6 @@ def player_numbers(teamname)
     count += 1
   end
  if teamname == game_hash[:away][:team_name]
-    count = 0 
       while count < game_hash[:away][:players].length
       numers_array.push(game_hash[:away][:players][count][:number])
       end

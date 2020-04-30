@@ -200,9 +200,9 @@ def big_shoe_rebounds
       if max < all_players[count][:shoe]
         max = all_players[count][:shoe]
       end
-      binding.pry
       count += 1
     end
+    binding.pry
 end
 
 

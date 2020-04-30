@@ -170,10 +170,10 @@ def player_numbers(teamname)
   if teamname == game_hash[:home][:team_name]
     count = 0 
       while count < game_hash[:home][:players]
+      binding.pry
       numers_array.push(game_hash[:home][:players][count][:number])
       end
     count += 1
-    binding.pry
   end
  if teamname == game_hash[:away][:team_name]
     count = 0 

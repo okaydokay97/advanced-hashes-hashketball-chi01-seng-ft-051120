@@ -193,7 +193,8 @@ count = 0
 end
 
 def big_shoe_rebounds
-  
+  all_players = game_hash[:home][:players] + game_hash[:away][:players]
+  binding.pry
 end
 
 

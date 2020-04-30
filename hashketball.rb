@@ -168,19 +168,13 @@ end
 def player_numbers(teamname)
   numers_array = []
   count = 0
-    while count < game_hash[:home][:players].length
+  
+  while count < game_hash[:home][:players].length
       if teamname == game_hash[:home][:team_name]
       numers_array.push(game_hash[:home][:players][count][:number])
       end
     count += 1
   end
-    while count < game_hash[:away][:players].length
-      if teamname == game_hash[:away][:team_name]
-      numers_array.push(game_hash[:away][:players][count][:number])
-      end
-    count += 1
-  end
-  numbers_array
 end
 
 def player_stats(name)

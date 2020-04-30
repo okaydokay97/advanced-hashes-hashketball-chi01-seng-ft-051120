@@ -173,6 +173,7 @@ def player_numbers(teamname)
       numers_array.push(game_hash[:home][:players][count][:number])
       end
     count += 1
+    binding.pry
   end
  if teamname == game_hash[:away][:team_name]
     count = 0 

@@ -194,7 +194,15 @@ end
 
 def big_shoe_rebounds
   all_players = game_hash[:home][:players] + game_hash[:away][:players]
-  while
+  count = 0
+  max = 0
+    while count < all_players.length
+      if max < all_players[count][:shoe]
+        max = all_players[count][:shoe]
+        
+      end
+      count += 1
+    end
 end
 
 

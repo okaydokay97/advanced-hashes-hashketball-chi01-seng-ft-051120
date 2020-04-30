@@ -166,18 +166,18 @@ def team_names
 end
 
 def player_numbers(teamname)
-  numers_array = []
+  numbers_array = []
   count = 0
   
   while count < game_hash[:home][:players].length
       if teamname == game_hash[:home][:team_name]
-      numers_array.push(game_hash[:home][:players][count][:number])
+      numbers_array.push(game_hash[:home][:players][count][:number])
       
       end
       binding.pry
     count += 1
   end
-  numers_array
+  numbers_array
 end
 
 def player_stats(name)
